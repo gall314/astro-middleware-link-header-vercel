@@ -10,5 +10,5 @@ You can further optimize you page load with CloudFlare or similar system to util
 
 To install you need the following packages:
 ```
-npm install -D rehype unist-util-visit hast-util-is-css-link
+npm install -D rehype unist-util-visit hast-util-is-css-link @astrojs/vercel
 ```
