@@ -1,14 +1,16 @@
 # astro-middleware-link-header-vercel
-Astro Middleware that generates Link headers for Vercel. 
 
-Good for setting up 103 Early Hints with CloudFlare.
+Astro Middleware that generates Link headers for Vercel.
 
-The middleware will automatically detect the Main CSS file and create a `<link rel="preload">` headers in HTML head section and as a HTTP/2 Header.
-It also looks for all eager loaded images with flag `fetchPriority="high"`.
+Good for setting up 103 Early Hints with Cloudflare.
 
-You can further optimize you page load with CloudFlare or similar system to utilize 103 Early Hints.
+The middleware will automatically detect the main CSS file and create a `<link rel="preload">` header in the HTML head section and as an `HTTP/2` header. 
 
-To install you need the following packages:
+It also looks for all eager-loaded images with the flag `fetchPriority="high"`.
+
+You can further optimize your page load with Cloudflare or a similar system to utilize 103 Early Hints.
+
+To install, you need the following packages:
 ```
 npm install -D rehype unist-util-visit hast-util-is-css-link @astrojs/vercel
 ```
